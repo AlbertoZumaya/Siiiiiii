@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>pagina 1</title>
+</head>
+<body bgcolor="#e">
+<div style="margin:24px">
+<nav class="navbar navbar-inverse navbar-stick-static-top">
+<div class="container">
+<a class="navbar-brand" href= "index.html">Inicio</a>
+<ul class="nav navbar-nav">
+<li class="Active">
+<a href="menu.html">Menu</a>
+                </li>
+                <li>
+                <a href="formulario.html">Formulario</a>
+                </li>
+                <li>
+                <a href="pedidorealizado.html">Pedidorealizado</a>
+                </li>
+                <li>
+                <a href="contacto.html">Contacto</a>
+   </ul>
+   </div>
+    </nav>
+ </div>
+ <h1> Formulario </h1>
+ <form   id="pedido">
+    <p>
+        Nombre: <input type="text" name="nombre" id="nombre" size="40">
+    </p>
+    <p>
+        Apellido: <input type="text" name="apellido" id="apellido" size="40">
+    </p>
+    <p>
+        Direccion: <input type="text" name="direccion" id="direccion" size="40">
+    </p>
+    <p>
+        Colonia: <input type="text" name="colonia" id="colonia" size="40">
+    </p>
+    <p>
+        Telefono: <input type="text" name="telefono" id="telefono" size="40">
+    </p>
+    <p>
+        <p>Servilletas: 
+        <input  type="radio" name="servilletas" value="Si"><rosa>Si</rosa></rosa>
+        <input type="radio" name="servilletas" value="No"><morado>No</morado> <br><br>
+<p> Que vas a pedir?:
+        <select name="menu" id="menu">
+        <optgroup label="Kimchi">
+            <option value="Kimchi de rabano">Kimchi de rábano cortado en cubitos (Kkakdugi), crujiente y jugoso, contiene camarones fermentados;</option>
+                <option value="Kimchi de agua">Kimchi de agua (Nabak), acuoso y ligeramente picante;</option>
+          <option value="Kimchi de rabano joven">Kimchi de rábano de verano joven (Yeolmu)</option>
+          <option value="Kimchi de pepino (Oi-sobagi)">Kimchi de pepino (Oi-sobagi) relleno con mariscos y pasta de chile</option>
+        </optgroup>
+        <optgroup label="Samgyeopsal">
+          <option value="Samgyeopsal">Samgyeopsal en rebanadas de carne de panceta </option> 
+               </optgroup>
+         <optgroup label="Bulgogi">
+          <option value="Bulgogi"> Bulgogi de ternera asada</option>
+        </optgroup>
+         <optgroup label="Sundubu-jjigae">
+          <option value="Sundubu-jjigae"> Sundubu-jjigae (Guiso picante de tofu)</option>
+        </optgroup>
+         <optgroup label="Hobakjuk">
+          <option value="Hobakjuk">Hobakjunk (Gacha de calabaza)</option>
+        </optgroup>
+        <optgroup label="Japchae">
+          <option value="Japchae"> Japchae (Batata y fideo celofán)</option>
+        </optgroup>
+        <optgroup label="Hotteok">
+          <option value="Hotteok"> Hotteok (Trozos de canela y cacahuate)</option>
+          <option value="Bokbunja Hotteok"> Bokbunja Hotteok (Dulce de leche y avellanas)</option>
+        </optgroup>
+            </select>
+                <select name="bebidas" id="bebidas">
+  <optgroup label="Vinos">
+          <option value="Vino tinto">Vino Tinto</option>
+          <option value="Vino espumoso">Vino Espumoso</option>
+          <option value="Vino blanco">Vino Blanco</option>
+          <option value="Vino rosado">Vino Rosado</option>
+          <option value="Vino Generoso">Vino Generoso</option>
+  </optgroup>
+  <optgroup label="Cervezas">
+       <option value="cerveza de trigo y cebada">Cerveza de Trigo o cebaba</option>
+          <option value="Cervezas tipo ale">Cervezas tipo ale</option>
+          <option value="Cerveza tipo Brown ale">Cerveza tipo Brown ale</option>
+          <option value="Cerveza Mild ale"> Cerveza Mild ale</option>
+          <option value="Cerveza Old ale">Cerveza Old ale</option>
+          <option value="Cereza Ipa">Cerveza Ipa</option>
+           <option value="Cerveza de abadía">Cerveza de abadía</option>
+  </optgroup>
+  <optgroup label="Aguas">
+          <option value="Agua Natural">Agua Natural</option>
+          <option value="Agua de jamica">Agua de Jamaica</option>
+          <option value="Agua de Horchata">Agua de Horchata</option>
+          <option value="Agua de Mango">Agua de Mango</option>
+          <option value="Agua de Fresa"> Agua de Fresa</option>
+          <option value="Agua de Limon">Agua de Limon</option>
+          <option value="Agua de Melon">Agua de Melon</option>
+          <option value="Agua de Tamarindo">Agua de Tamarindo</option>
+  </optgroup>
+         </select>
+        <hr>
+        <h1 style="color: blueviolet;">Complementos</h1>
+        <input type="checkbox" id="postre" checked><label for="postre" style="font-size: 20px;">Postre</label><br> 
+         <input type="checkbox" id="fruta"><label for="fruta" style="font-size: 20px;">Fruta picada</label><br>
+          <input type="checkbox" id="bebidaa"><label for="bebidaa" style="font-size: 20px;">Bebida especial</label><br>
+        <input type="checkbox" id="tostadas"><label for="tostadas" style="font-size: 20px;">Tostadas</label><br>
+        <input type="checkbox" id="dimension"><label for="dimension" style="font-size: 20px;">Galletas</label><br>
+        <input type="checkbox" id="verde"><label for="verde" style="font-size: 20px;">Salsa verde</label><br>
+          <input type="checkbox" id="roja"><label for="roja" style="font-size: 20px;">Salsa roja</label><br>
+          <input type="checkbox" id="quesos"><label for="quesos" style="font-size: 20px;">Quesos en cuadritos</label><br>
+           <input type="checkbox" id="regalo"><label for="regalo" style="font-size: 20px;">Regalo sorpresa</label><br>
+            <input type="checkbox" id="degustacion"><label for="degustacion" style="font-size: 20px;">Degustacion especial</label><br>
+        <input type="checkbox" id="totopos"><label for="totopos" style="font-size: 20px;">Totopos</label><br>
+      </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+  </form>
+  <script type="text/javascript">
+  const form=document.getElementById("pedido");
+  form.addEventListener("submit",function(event){
+  event.preventDefault();
+const formData=new FormData(form);
+  const orden={
+    nombre:formData.get("nombre"),
+    apellido:formData.get("apellido"),
+    telefono:formData.get("telefono"),
+    direccion:formData.get("direccion"),
+    colonia:formData.get("colonia"),
+    servilletas:formData.get("servilletas"),
+    menu:formData.get("menu"),
+    bebidas:formData.get("bebidas"),
+    postre:document.getElementById("postre").checked ? "Si":"No",
+     fruta:document.getElementById("fruta").checked ? "Si":"No",
+    bebidaa:document.getElementById("bebidaa").checked ? "Si" : "No",
+     tostadas:document.getElementById("tostadas").checked ? "Si":"No",
+ dimension:document.getElementById("dimension").checked ? "Si":"No",
+    verde:document.getElementById("verde").checked ? "Si":"No",
+     roja:document.getElementById("roja").checked ? "Si":"No",
+      quesos:document.getElementById("quesos").checked ? "Si":"No",
+      regalo:document.getElementById("regalo").checked ? "Si":"No",
+       degustacion:document.getElementById("degustacion").checked ? "Si":"No",
+         totopos:document.getElementById("totopos").checked ? "Si":"No"
+};
+  localStorage.setItem("orden",JSON.stringify(orden));
+  window.location.href="pedidorealizado.html";
+});
+</script>
+</body>
+</html>
+</body>
+</html>
